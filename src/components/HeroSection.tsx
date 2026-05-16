@@ -18,7 +18,17 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/30 z-[1] pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 pointer-events-none w-full max-w-[90%] sm:max-w-md lg:max-w-2xl px-6 md:px-10 pb-10 md:pb-10 pt-32">
+      <div className="relative z-10 pointer-events-none w-full max-w-[90%] sm:max-w-md lg:max-w-2xl px-6 md:px-10 pb-10 md:pb-16 pt-32">
+
+        {/* Live status badge */}
+        <div
+          className="opacity-0 animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/40 border border-primary/30 text-primary text-xs font-medium mb-6 backdrop-blur-sm"
+          style={{ animationDelay: "0.05s" }}
+        >
+          <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+          Gemini 3.1 Flash Live Support Active
+        </div>
+
         {/* Heading */}
         <h1
           className="opacity-0 animate-fade-up text-[clamp(3rem,8vw,6rem)] font-bold leading-[1.05] tracking-[-0.05em] text-foreground mb-2 md:mb-4 uppercase"
@@ -32,7 +42,7 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up text-foreground/80 text-[clamp(1.125rem,2.5vw,1.875rem)] font-light mb-3 md:mb-6"
           style={{ animationDelay: "0.4s" }}
         >
-          We implement security correctly.
+          Elevate Your Customer Support
         </p>
 
         {/* Description */}
@@ -40,9 +50,9 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up text-muted-foreground text-[clamp(0.875rem,1.5vw,1.25rem)] font-light mb-4 md:mb-8"
           style={{ animationDelay: "0.55s" }}
         >
-          Enterprise security systems built in days. AI-powered surveillance
-          deployed with zero-trust architecture. Smart access control set up for
-          your entire facility. All of it done right, not just fast.
+          Deploy hyper-realistic AI voice agents powered by Gemini. Reduce
+          average handle time, scale your operations instantly, and deliver
+          24/7 world-class BPO services.
         </p>
 
         {/* CTA Buttons */}
@@ -50,11 +60,16 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up flex flex-wrap gap-3 font-bold"
           style={{ animationDelay: "0.7s" }}
         >
-          <button className="pointer-events-auto bg-primary text-primary-foreground px-6 py-3 md:px-8 md:py-4 text-sm rounded-sm cursor-pointer hover:brightness-110 transition-all active:scale-[0.97]">
-            Book a Call
-          </button>
+          <a
+            href="https://aibpo.vercel.app/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pointer-events-auto bg-primary text-primary-foreground px-6 py-3 md:px-8 md:py-4 text-sm rounded-sm cursor-pointer hover:brightness-110 transition-all active:scale-[0.97]"
+          >
+            Enter Dashboard
+          </a>
           <button className="pointer-events-auto bg-white text-background px-6 py-3 md:px-8 md:py-4 text-sm rounded-sm cursor-pointer hover:brightness-90 transition-all active:scale-[0.97]">
-            Our Work
+            Watch Demo
           </button>
         </div>
 

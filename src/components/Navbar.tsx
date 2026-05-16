@@ -1,33 +1,43 @@
-import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
-const navLinks = ["Services", "About Us", "Projects", "Team", "Contacts"];
+const navLinks = [
+  { label: "Features", to: "/features" },
+  { label: "Pricing", to: "/pricing" },
+];
 
 export default function Navbar() {
+  const { pathname } = useLocation();
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 lg:px-16 py-5">
-      <span className="text-foreground text-xl font-semibold tracking-tight">
+      <Link to="/" className="text-foreground text-xl font-semibold tracking-tight">
         SENTINEL
-      </span>
+      </Link>
 
       <div className="hidden md:flex items-center gap-8">
-        {navLinks.map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase().replace(" ", "-")}`}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest"
+        {navLinks.map(({ label, to }) => (
+          <Link
+            key={label}
+            to={to}
+            className={`text-sm uppercase tracking-widest transition-colors ${
+              pathname === to
+                ? "text-primary"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
           >
-            {link}
-          </a>
+            {label}
+          </Link>
         ))}
       </div>
 
-      <Button
-        variant="navCta"
-        size="lg"
-        className="hidden md:inline-flex rounded-lg uppercase text-xs tracking-widest px-6"
+      <a
+        href="https://aibpo.vercel.app/dashboard"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:inline-flex items-center rounded-lg bg-nav-button hover:bg-nav-button/80 active:scale-[0.97] transition-all text-foreground uppercase text-xs tracking-widest px-6 py-2.5 font-medium"
       >
-        Get Quote
-      </Button>
+        Login
+      </a>
     </nav>
   );
 }
