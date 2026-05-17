@@ -26,7 +26,7 @@ export default function HeroSection() {
           style={{ animationDelay: "0.05s" }}
         >
           <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-          Gemini 3.1 Flash Live Support Active
+          Powered by Resolute A.I. Inc.
         </div>
 
         {/* Heading */}
@@ -42,18 +42,19 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up text-foreground/80 text-[clamp(1.125rem,2.5vw,1.875rem)] font-light mb-3 md:mb-6"
           style={{ animationDelay: "0.4s" }}
         >
-          Elevate Your Customer Support
+          Elevate your Customer and Technical Support
         </p>
 
         {/* Description */}
-        <p
-          className="opacity-0 animate-fade-up text-muted-foreground text-[clamp(0.875rem,1.5vw,1.25rem)] font-light mb-4 md:mb-8"
+        <ul
+          className="opacity-0 animate-fade-up text-muted-foreground text-[clamp(0.875rem,1.5vw,1.125rem)] font-light mb-4 md:mb-8 space-y-2 list-none"
           style={{ animationDelay: "0.55s" }}
         >
-          Deploy hyper-realistic AI voice agents powered by Gemini. Reduce
-          average handle time, scale your operations instantly, and deliver
-          24/7 world-class BPO services.
-        </p>
+          <li>* Deploy hyper-realistic A.I. Voice agents.</li>
+          <li>* Fully autonomous remote troubleshooting — A.I. securely connects to devices, diagnoses issues, and implements fixes in real time.</li>
+          <li>* Instantly scale operations from a single agent to thousands within days, without the traditional BPO overhead.</li>
+          <li>* 24/7 world-class customer support with consistent performance, rapid response times, and enterprise-grade reliability.</li>
+        </ul>
 
         {/* CTA Buttons */}
         <div
