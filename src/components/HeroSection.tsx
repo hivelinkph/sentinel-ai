@@ -74,13 +74,7 @@ export default function HeroSection() {
           </button>
         </div>
 
-        {/* Trust line */}
-        <p
-          className="opacity-0 animate-fade-up text-muted-foreground/60 text-xs font-light mt-4 md:mt-6"
-          style={{ animationDelay: "0.85s" }}
-        >
-          Trusted security partner. Columbus, OH. 12 systems deployed.
-        </p>
+
       </div>
     </section>
   );
