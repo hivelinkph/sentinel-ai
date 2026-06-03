@@ -34,7 +34,7 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up text-[clamp(3rem,8vw,6rem)] font-bold leading-[1.05] tracking-[-0.05em] text-foreground mb-2 md:mb-4 uppercase"
           style={{ animationDelay: "0.2s" }}
         >
-          SENTINEL <span className="text-primary">AI</span>
+          AI CX <span className="text-primary">AGENT</span>
         </h1>
 
         {/* Subheading */}

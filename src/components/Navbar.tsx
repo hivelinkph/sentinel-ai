@@ -10,8 +10,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 lg:px-16 py-5">
-      <Link to="/" className="text-foreground text-xl font-semibold tracking-tight">
-        SENTINEL
+      <Link to="/" className="flex items-center gap-2.5 text-foreground text-xl font-semibold tracking-tight">
+        <img src="/aicxagent.png" alt="AI CX Agent" className="h-9 w-9 rounded-lg object-contain" />
+        AI CX Agent
       </Link>
 
       <div className="hidden md:flex items-center gap-8">

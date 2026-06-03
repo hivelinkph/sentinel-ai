@@ -211,7 +211,7 @@ export default function Pricing() {
 
       {/* Footer */}
       <footer className="border-t border-border/50 py-8 px-6 text-center text-muted-foreground/60 text-sm">
-        <p>© 2026 SENTINEL AI — VoxSaaS BPO Platform. All rights reserved.</p>
+        <p>© 2026 AI CX Agent — VoxSaaS BPO Platform. All rights reserved.</p>
       </footer>
     </div>
   );
